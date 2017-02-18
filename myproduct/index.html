@@ -1,0 +1,20 @@
+<html>
+  <head>
+      <meata name="viewport" content ="width=device-width, initial-scale =1">
+        <link rel="stylesheet" href="styles/bootstrap.min.css">
+          <!-- Library includes-->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+      <title>my-product</title>
+  </head>
+  <body>
+      <my-product></my-product>
+  </body>
+</html>
